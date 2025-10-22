@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K. Gokulakrishnan — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#08305a;
+      --accent:#0f4fa0;
+      --muted:#6b7280;
+      --card:#f8fafc;
+      --glass: rgba(255,255,255,0.7);
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#0b1220;background:linear-gradient(180deg,#f6f9fb,white);}
+    .container{max-width:var(--max-width);margin:36px auto;padding:24px}
+
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;flex-shrink:0;box-shadow:0 8px 20px rgba(3,12,34,0.08)}
+    .hero{flex:1}
+    h1{margin:0;font-size:28px;color:var(--navy)}
+    h2{margin:4px 0 8px;font-size:14px;color:var(--muted);font-weight:600}
+    .contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:8px;background:var(--navy);color:white;text-decoration:none;font-weight:600;font-size:13px;box-shadow:0 6px 18px rgba(3,12,34,0.08)}
+    .btn.ghost{background:transparent;border:1px solid rgba(8,48,90,0.08);color:var(--navy)}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:24px}
+    @media(max-width:900px){main{grid-template-columns:1fr} .avatar{width:96px;height:96px;font-size:22px} }
+
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 8px 30px rgba(10,20,30,0.04);}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-weight:700;color:var(--navy);font-size:13px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(8,48,90,0.08);padding:8px 10px;border-radius:8px;font-weight:600;color:var(--navy);font-size:13px}
+
+    .timeline{display:flex;flex-direction:column;gap:14px}
+    .role{display:flex;gap:14px}
+    .role .meta{color:var(--muted);font-size:13px}
+    .small{font-size:13px;color:var(--muted)}
+
+    .progress{height:10px;background:rgba(3,12,34,0.06);border-radius:999px;overflow:hidden}
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--navy),var(--accent));border-radius:999px}
+
+    footer{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* subtle animations */
+    .fade-up{transform:translateY(10px);opacity:0;transition:all 520ms cubic-bezier(.2,.9,.3,1)}
+    .fade-up.visible{transform:none;opacity:1}
+
+    .socials{display:flex;gap:10px}
+    .socials a{display:inline-flex;padding:8px;border-radius:8px;background:transparent;border:1px solid rgba(8,48,90,0.06);text-decoration:none;color:var(--navy);font-weight:600}
+
+    /* resume / download */
+    .download-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--navy);font-weight:700}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-up">
+      <div class="avatar">KG</div>
+      <div class="hero">
+        <h1>K. Gokulakrishnan</h1>
+        <h2>Senior MIS Executive • Data Analyst • Report Automation Specialist</h2>
+        <div class="contact">
+          <a class="btn" href="mailto:kgkl.krishnan@gmail.com">kgkl.krishnan@gmail.com</a>
+          <a class="btn ghost" href="tel:+918056089647">+91 80560 89647</a>
+          <a class="btn" id="resumeBtn" href="assets/GokulaKrishnan_Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card fade-up" style="margin-bottom:18px;">
+          <div class="section-title">
+            <div class="pill">About</div>
+          </div>
+          <p class="small">Result-driven MIS professional with experience in data analysis, reporting, and dashboard management across manufacturing and FMCG. Skilled in automating reports, data validation, and building dashboards in Excel and Google Sheets. Familiar with SQL, Python basics, Power BI, and automation using Apps Script & VBA.</p>
+        </div>
+
+        <div class="card fade-up" style="margin-bottom:18px;">
+          <div class="section-title"><div class="pill">Experience</div></div>
+          <div class="timeline">
+
+            <div class="role">
+              <div style="flex:1">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                  <div><strong>Senior MIS Executive</strong> — LLM Appliance Pvt. Ltd.</div>
+                  <div class="meta">Feb 2025 — Present</div>
+                </div>
+                <div class="small">Designed advanced MIS dashboards, streamlined reporting processes, and provided analytical insights for management decisions.</div>
+              </div>
+            </div>
+
+            <div class="role">
+              <div style="flex:1">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                  <div><strong>MIS Executive</strong> — ARS Steels & Alloys Intl. Pvt. Ltd.</div>
+                  <div class="meta">Apr 2023 — Feb 2025</div>
+                </div>
+                <div class="small">Automated daily/weekly/monthly MIS, created dashboards using Excel & Google Sheets, and improved reporting accuracy.</div>
+              </div>
+            </div>
+
+            <div class="role">
+              <div style="flex:1">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                  <div><strong>MIS Assistant</strong> — Modern Food Enterprises Pvt. Ltd.</div>
+                  <div class="meta">2019 — 2022</div>
+                </div>
+                <div class="small">Managed HR & payroll reporting, attendance data, and maintained employee records & registers.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card fade-up" style="margin-bottom:18px;">
+          <div class="section-title"><div class="pill">Technical Skills</div></div>
+          <div class="skills">
+            <div class="skill">Advanced Excel</div>
+            <div class="skill">Google Sheets</div>
+            <div class="skill">VBA & Apps Script</div>
+            <div class="skill">SQL (Oracle)</div>
+            <div class="skill">Python (Basics)</div>
+            <div class="skill">Power BI (Basic)</div>
+            <div class="skill">Selenium (Testing)</div>
+            <div class="skill">HTML/CSS/JS</div>
+          </div>
+        </div>
+
+        <div class="card fade-up">
+          <div class="section-title"><div class="pill">Projects & Academic</div></n>
+          <p class="small"><strong>Library Management System</strong> — Implemented data storage & retrieval modules using C/Java/VB6 with Oracle 10g for backend. Focused on automating book tracking and member management.</p>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card fade-up" style="margin-bottom:18px;">
+          <div class="section-title"><div class="pill">Education</div></div>
+          <div>
+            <div style="margin-bottom:8px"><strong>M.Sc. Computer Science</strong><div class="small">Anna University (Distance) — Pursuing</div></div>
+            <div><strong>B.Sc. Computer Science & Technology</strong><div class="small">T.S.N. College — Madras University</div></div>
+          </div>
+        </div>
+
+        <div class="card fade-up" style="margin-bottom:18px;">
+          <div class="section-title"><div class="pill">Certifications</div></div>
+          <ul class="small">
+            <li>MS Office</li>
+            <li>Core Java</li>
+            <li>Software Testing (Functional & Automation)</li>
+            <li>SQL & Hardware/Networking</li>
+          </ul>
+        </div>
+
+        <div class="card fade-up" style="margin-bottom:18px;">
+          <div class="section-title"><div class="pill">Achievements & Interests</div></div>
+          <p class="small">Karate instructor with experience in training students, passionate about self-learning, hardware troubleshooting, and building automated reporting solutions.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="section-title"><div class="pill">Contact & Socials</div></div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:kgkl.krishnan@gmail.com">Email</a>
+            <a href="#" id="downloadResume" class="download-link">Resume</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div>Designed & maintained by <strong>K. Gokulakrishnan</strong> • Built with simple HTML/CSS</div>
+    </footer>
+
+  </div>
+
+  <script>
+    // small interactions
+    document.addEventListener('DOMContentLoaded',()=>{
+      // reveal animations
+      document.querySelectorAll('.fade-up').forEach((el,i)=>{
+        setTimeout(()=>el.classList.add('visible'), 120 + i*80);
+      });
+
+      // resume button: if user hosted assets folder, it will download. Otherwise it will attempt fallback
+      const resumeBtn = document.getElementById('resumeBtn');
+      const downloadResume = document.getElementById('downloadResume');
+      downloadResume.addEventListener('click', (e)=>{
+        e.preventDefault();
+        // try to open the resume path used in this template
+        window.open('assets/GokulaKrishnan_Resume.pdf','_blank');
+      });
+    });
+  </script>
+</body>
+</html>
